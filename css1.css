@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .wrapper > div {
+
+    padding: 1em;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 200px 100px;
+    gap: 1px;
+  }
+  
+  .header {
+    font-size: 20px;
+    background-color: orange;
+    grid-column: 1/4;
+    grid-row:1;
+  }
+  
+  .sidebar {
+    background-color:coral;
+    grid-column: 1;
+    grid-row: 2/4;
+  }
+  
+  .main {
+    background-color:skyblue;
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+  
+  .footer{
+    background-color:seagreen;
+    grid-column: 1/4;
+    grid-row: 4/6;
+  }
+  
+  
+  
